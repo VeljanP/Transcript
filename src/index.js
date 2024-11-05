@@ -12,11 +12,6 @@ const msalInstance = new PublicClientApplication(msalConfig);
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement); // For React 18+
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
-
 root.render(
   <MsalProvider instance={msalInstance}>
     <App />
