@@ -1,10 +1,10 @@
-.container {
+/*.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full height to center vertically */
-    text-align: center; /* Center text */
+    height: 100vh; /* Full height to center vertically *
+    text-align: center; /* Center text *
     font-family: Arial, sans-serif;
     }
 
@@ -51,5 +51,128 @@
     &:disabled {
         cursor: default;
         opacity: 0.7;
+    }
+}
+
+
+.recording-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.recording-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.recording-button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.recording-button:hover {
+    background-color: #0056b3;
+}
+
+.transcript-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+} */
+
+.recording-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    gap: 50px; /* Adjusts space between the two sections */
+    flex-wrap: wrap;
+}
+
+.left-section, .right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3c4557;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+}
+
+.record-button {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.audio-player {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.download-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.transcription-box {
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    background-color: #29313f;
+    border: 1px solid #393f4a;
+    border-radius: 5px;
+    overflow-y: auto;
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    .recording-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Space between stacked sections */
+    }
+
+    .record-button, .download-button {
+        width: 100%; /* Full-width buttons for easier access */
+        max-width: 250px; /* Optional: Limits button width on very wide screens */
+    }
+
+    .transcription-box {
+        max-width: 100%; /* Full width to adapt to smaller screens */
     }
 }

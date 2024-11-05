@@ -61,8 +61,6 @@ import React, { useState } from 'react';
 import './App.css';
 import RecordingScreen from './RecordingScreen';
 import SignInScreen from './SignInScreen';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-
 
 function App() {
   // State to track whether the user is authenticated (logged in or registered)

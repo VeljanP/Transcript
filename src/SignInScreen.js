@@ -122,7 +122,6 @@ const SignInScreen = ({ onLogin }) => {
 
     return (
         <div style={styles.container}>
-            <img src="C:\Users\Pejovski\Desktop\semos-logo-02.png"></img>
             <h1>SEMOS Transcript App</h1>
 
         <form style={styles.form} onSubmit={handleSignIn}>
