@@ -1,0 +1,9 @@
+version: 1
+services:
+  - type: web
+    name: two-screen-app
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
